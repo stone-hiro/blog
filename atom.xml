@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>stone-hiroのメモ</title>
+  <icon>https://stone-hiro.github.io/blog/icon.png</icon>
+  
+  <link href="https://stone-hiro.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://stone-hiro.github.io/blog/"/>
+  <updated>2025-03-21T01:50:56.000Z</updated>
+  <id>https://stone-hiro.github.io/blog/</id>
+  
+  <author>
+    <name>stone-hiro</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SharepointのOfficeファイルを開くと出る「潜在的なセキュリティの問題」画面をIntuneで抑制する</title>
+    <link href="https://stone-hiro.github.io/blog/2025/03/21/sharepoint-potential-issue/"/>
+    <id>https://stone-hiro.github.io/blog/2025/03/21/sharepoint-potential-issue/</id>
+    <published>2025-03-21T01:21:34.000Z</published>
+    <updated>2025-03-21T01:50:56.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;この記事では、SharepointのOfficeファイルを開くと出る「このコンテンツは潜在的なセキュリティの問題を示します。このコンテンツを信頼しますか？」の画面をIntuneで抑制する方法について考えます。&lt;/p&gt;
+&lt;p&gt;&amp;lt;!– toc –&amp;gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
