@@ -14,7 +14,7 @@ tags:
 
 わかりやすい解説を他の方が出されているのでご紹介します。
 
-[https://gintachan.com/sharepoint-excel-content-security-alert-popup:embed:cite]
+https://gintachan.com/sharepoint-excel-content-security-alert-popup
 
 
 
@@ -73,7 +73,9 @@ tags:
 
 * 「Site to Zone Assignment List」をEnabledにします
 * 「ここにゾーンの割り当てを入力してください。」に信頼済みサイトのリストを指定します。
-  * NameにはサイトのURL、Valueには2を指定します((value=2は信頼済みサイトとして割り当てることを意味します。参考サイト：https://letsconfigmgr.com/mem-deploying-trusted-sites/))。
+  * NameにはサイトのURL、Valueには2を指定します。
+  * value=2は信頼済みサイトとして割り当てることを意味します。
+  * 参考サイト：https://letsconfigmgr.com/mem-deploying-trusted-sites/
 
 ![信頼済みサイトを指定する](/2025/03/21/sharepoint-potential-issue/setting04.png)
 
