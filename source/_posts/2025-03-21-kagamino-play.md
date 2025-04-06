@@ -2,6 +2,7 @@
 title: かがみの特殊少年厚生施設をプレイした
 date: 2025-03-21 17:25:05
 tags:
+  - 第四境界
 ---
 
 はてなブログ版はこちら：https://stone-coil-4423.hatenablog.com/entry/2024/05/16/123932

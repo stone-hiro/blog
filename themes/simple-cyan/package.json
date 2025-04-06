@@ -1,0 +1,13 @@
+{
+  "name": "simple-syan",
+  "version": "1.0.0",
+  "description": "Hexo Theme Simple Cyan",
+  "repository": "-",
+  "keywords": [
+    "hexo",
+    "theme",
+    "simple",
+    "cyan"
+  ],
+  "license": "MIT"
+}

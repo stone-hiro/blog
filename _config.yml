@@ -97,7 +97,7 @@ ignore: ''
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: simple-cyan
 
 feed:
   enable: true
@@ -130,3 +130,4 @@ deploy:
   type: git
   repo: https://github.com/stone-hiro/blog
   branch: gh-pages
+

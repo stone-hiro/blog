@@ -1,0 +1,221 @@
+// Config
+support-for-ie = false
+vendor-prefixes = webkit moz ms official
+
+// Fonts
+font-sans = 'Helvetica Neue', 'Helvetica', 'Arial', 'BIZ UDPGothic', 'Meiryo', 'MS PGothic', 'Hiragino Kaku Gothic Pro', sans-serif;
+font-serif = Georgia, "Times New Roman", serif
+font-mono = "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
+font-icon = ForkAwesome
+font-size = 1rem
+line-height = 1.6
+line-height-title = 1.1rem
+
+// Header
+logo-size = 40px
+subtitle-size = 16px
+banner-height = 200px
+banner-url = hexo-config("banner")
+
+// sidebar
+sidebar = hexo-config("sidebar")
+
+if sidebar and sidebar isnt bottom
+  _sidebar-column = sidebar-column
+else
+  _sidebar-column = 0
+
+
+// Layout
+block-margin = 50px
+article-padding = 20px
+mobile-nav-width = 280px
+main-column = 9
+sidebar-column = 3
+
+
+// Grids
+column-width = 80px
+gutter-width = 20px
+columns = main-column + _sidebar-column
+
+// Media queries
+mq-mobile = "screen and (max-width: 479px)"
+mq-tablet = "screen and (min-width: 480px) and (max-width: 767px)"
+mq-normal = "screen and (min-width: 768px)"
+
+
+/* ===== NEW ======== */
+/* ===============================================  */
+/* 色の定義 color definition (light mode)            */
+/* ===============================================  */
+
+// text color
+text-color                 = #333333  // Grey-800
+text-light                 = #767676  // Grey-536
+// keyword
+keyword-line-color         = #767676  // Grey-536
+// key color
+primary-color              = #008da6  // Cyan-700
+secondary-color            = #00a3bf  // Cyan-600
+tertiary-color             = #006137  // Cyan-1000
+background-color           = #e6fcff  // Cyan-50
+// link
+link-color                 = #00118f  // Blue-1000
+link-visited               = #8b008b  // Magenta-900
+link-active                = #e25100  // Orange-700
+// code block
+pre-block-bg               = #f2f2f2  // Gray-50
+pre-block-text             = #1a1a1a  // Grey-900
+code-bg                    = #f2f2f2  // Gray-50
+code-text                  = #008da6  // Cyan-700 primary color
+// blockquote
+blockquote-border          = #cccccc  // Grey-200
+// table
+table-border               = #cccccc  // Grey-200
+
+/* ===============================================   */
+/* 色の定義 color definition (dark mode)              */
+/* ===============================================   */
+
+background-dark            = #1f1f1f  // Grey-900
+// text color
+text-dark                  = #f2f2f2  // Grey-50
+text-light-dark            = #999999  // Grey-400
+// key color
+primary-color-dark         = #01b7d6  // Cyan-500
+secondary-color-dark       = #00a3bf  // Cyan-600
+tertiary-color-dark        = #99f2ff  // Cyan-200
+background-color-dark      = #003741  // Cyan-1200
+// link
+link-dark                  = #7096f8  // Blue-500
+link-visited-dark          = #db00db  // Magenta-600
+// link-active  lightと同じ
+// code block
+pre-block-bg-dark          = #1a1a1a  // Gray-900
+pre-block-text-dark        = #f2f2f2  // Grey-50
+code-bg-dark               = #1a1a1a  // Gray-900
+code-text-dark             = #01b7d6  // Cyan-500
+// syntax highlight
+synSpecial-color-dark      = #db00db  // Magenta-600
+synType-color-dark         = #6fA104  // Lime-700
+synComment-color-dark      = #0877d7  // Light Blue-700
+synPreProc-color-dark      = #a565f8  // Purple-500
+synIdentifier-color-dark   = #00a3bf  // Cyan-600
+synConstant-color-dark     = #fe3939  // Red-600
+synStatement-color-dark    = #a58000  // Yellow-800
+// blockquote
+blockquote-border-dark     = #666666  // Grey-600
+// table
+table-border-dark          = #666666  // Grey-600
+
+color-twitter              = #00aced
+color-facebook             = #3b5998
+color-pinterest            = #cb2027
+color-linkedin             = #0077B5
+
+/* ===============================================   */
+/* タイポグラフィの定義 typography definition          */
+/* ===============================================   */
+
+/*  Std font  */
+Std-40B-5()
+  font-size 2.5rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-32B-5()
+  font-size 2rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-28B-5()
+  font-size 1.75rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-24B-5()
+  font-size 1.5rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-22B-5()
+  font-size 1.375rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-20B-5()
+  font-size 1.25rem
+  font-weight bold
+  line-height 1.5
+  letter-spacing 0.02rem
+
+Std-18B-6()
+  font-size 1.125rem
+  font-weight bold
+  line-height 1.6
+  letter-spacing 0.02rem
+
+Std-17B-7()
+  font-size 1.0625rem
+  font-weight bold
+  line-height 1.7
+  letter-spacing 0.02rem
+
+Std-16B-7()
+  font-size 1.0rem
+  font-weight bold
+  line-height 1.7
+  letter-spacing 0.02rem
+
+Std-16N-7()
+  font-size 1.0rem
+  font-weight normal
+  line-height 1.7
+  letter-spacing 0.02rem
+
+/*  Dns font  */
+Dns-14N-3()
+  font-size 0.875rem
+  font-weight normal
+  line-height 1.3
+  letter-spacing 0
+
+Dns-14N-7()
+  font-size 0.875rem
+  font-weight normal
+  line-height 1.7
+  letter-spacing 0
+
+/*  Mono font  */
+Mono-14N-5()
+  font-family font-family-monospace
+  font-size 0.875rem
+  font-weight normal
+  line-height 1.5
+  letter-spacing 0
+
+/* ===============================================   */
+/* Google Material icon                              */
+/* ===============================================   */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+google_material_symbol(string_code) {
+    font-family: "Material Symbols Outlined"
+    content: string_code
+}
+
+// $percentageで指定した分だけ$colorで指定した色の線を引く
+mix_line(line-color, percentage) {
+    position: absolute
+    content: " "
+    display: block
+    border-bottom: 3px solid line-color
+    bottom: -3px;
+    width: percentage
+}

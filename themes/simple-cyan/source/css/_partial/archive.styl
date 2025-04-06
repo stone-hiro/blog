@@ -1,0 +1,86 @@
+.archives-wrap
+  margin: block-margin 0
+
+.archives
+  clearfix()
+
+.archive-year-wrap
+  margin-bottom: 1em
+
+.archive-year
+  @extend $block-caption
+  &:visited
+    color: var(--text-color)
+
+.archives
+  /*
+  column-gap: 20px
+  @media mq-tablet
+    column-count: 2
+  @media mq-normal
+    column-count: 2
+  */
+  
+.archive-article
+  margin-bottom: 1rem
+  padding: 0.5rem
+  margin-left: auto
+  margin-right: auto
+  border: thin solid var(--text-light-color)
+  border-left: thick solid var(--secondary-color)
+
+.archive-article-inner
+  // none
+
+.archive-article-title
+  Std-18N-5()
+  @media mq-normal
+    Std-20B-5()
+  a
+    color: var(--text-color)
+    text-decoration: none
+
+.archive-article-footer
+  margin-top: 1em
+
+.archive-article-date
+  Std-16N-7()
+  color: var(--text-color);
+  text-decoration: none
+  margin-bottom: 0.5em
+  display: block
+  &:visited
+    color: var(--text-color)
+  &:before
+    google_material_symbol("\e8b5"); // 時計アイコン
+    color: var(--primary-color);
+    vertical-align: middle;
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  border: 1px solid var(--text-light-color)
+  border-radius: 3px
+  text-align: center
+  color: var(--text-color)
+  overflow: hidden
+  a, span
+    padding: 0.5em
+  a
+    color: var(--text-color)
+    text-decoration: none
+    &:hover
+      background: var(--body-background-color)
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: var(--text-color)
+    font-weight: bold
+  .space
+    color: var(--table-border)

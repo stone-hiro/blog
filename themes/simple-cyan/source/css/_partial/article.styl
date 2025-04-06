@@ -1,0 +1,408 @@
+.article
+  margin: 2rem 0
+
+.article-inner
+  overflow: hidden
+
+.article-meta
+  clearfix()
+  
+.article-date
+  float: left
+  margin-right: 0.5rem
+  color: var(--text-color)
+  text-decoration: none
+  &:hover
+    font-weight: bold
+  &:active 
+    color: var(--link-active-color)
+  &:visited
+    color: var(--text-color)
+  &:before
+    google_material_symbol("\e8b5"); // 時計アイコン
+    color: var(--primary-color);
+    vertical-align: middle;
+
+.article-category
+  float: left
+  margin-right: 0.5rem
+  &:before
+    google_material_symbol("\e2c7")
+    @media mq-normal
+      font-size: 1rem
+    color: var(--primary-color)
+    vertical-align: middle
+
+.article-category-link
+  color: var(--text-colorr)
+  text-decoration: none
+  &:hover
+    font-weight: bold
+  &:active 
+    color: var(--link-active-color)
+  &:visited
+    color: var(--text-color)
+
+.article-header
+  margin: 1rem 0
+  border-top: 2px solid var(--tertiary-color)
+  border-bottom: 2px solid var(--tertiary-color)
+
+.article-title, a.article-title
+  display: block
+  margin: 1rem 0
+  text-decoration: none
+  Std-24B-5()
+  color: var(--text-color)
+  a
+    padding: 1rem 0
+    color: var(--text-color)
+  &:visited
+    color: var(--text-color)
+
+.article-entry
+  margin: 2rem 0
+
+  img,video 
+    max-width: 100%
+    height: auto
+  h1
+    margin: 3rem 0 2rem
+    Std-24B-5()
+    @media mq-normal
+      Std-28B-5()
+    border-bottom: solid 1px var(--background-color)
+    position: relative
+    &:after
+        mix_line(primary-color, 20%)
+  h2
+    margin: 2.5rem 0 1.5rem
+    Std-24B-5()
+    @media mq-normal
+      Std-22B-5()
+    border-left: solid 5px var(--primary-color)
+    padding-left: 0.5rem
+  h3
+    margin: 2rem 0 1rem
+    Std-20B-5()
+    @media mq-normal
+      Std-22B-5()
+    border-left: double 10px var(--primary-color)
+    padding-left: 0.5rem
+  h4
+    margin: 1rem 0 0.5rem
+    Std-18B-6()
+    @media mq-normal
+      Std-20B-5()
+    border-left: dotted 5px var(--primary-color)
+    padding-left: 0.5rem
+  h5
+    margin: 0.5rem 0 0.25rem
+    Std-17B-7()
+    @media mq-normal
+      Std-18B-6()
+  h6
+    margin: 0.25rem 0 0.2rem
+    Std-16B-7()
+    @media mq-normal
+      Std-17B-7()
+  p
+    margin: 1rem 0 1rem
+  ul,ol,dd
+    margin: 0 0 1rem 1.5rem
+    padding: 0
+    list-style: square
+    &:marker
+        color: var(--secondary-color)
+    li
+      ul,ol
+        margin-bottom: 0
+      &:marker
+        color: var(--secondary-color)
+  dt
+    font-weight: bold
+    color: var(--secondary-color)
+  table
+    margin-bottom: 1rem
+    border-collapse: collapse
+    border-spacing: 0
+    width: 100%
+    overflow: auto
+    display: block
+  table
+    th,td
+      border: thin solid var(--table-border-color)
+      padding: 0.25rem 0.5rem
+    th
+      background: var(--background-color)
+      color: var(--tertiary-color)
+  blockquote
+    margin: 0 0 1rem
+    padding: 1rem
+    border: thin solid var(--blockquote-border-color)
+    p:first-of-type
+      margin-top: 0
+    p:last-of-type
+      margin-bottom: 0
+    cite
+      display: block
+      font-style: normal
+      text-align: right
+  pre, code
+    Mono-14N-5()
+  pre
+    padding: 1rem
+    background: var(--pre-block-bg-color)
+    color: var(--pre-block-text-color)
+    border: none
+    white-space: pre
+    overflow: auto
+    & > code
+      margin: 0
+      padding: 0
+      white-space: pre
+      border: none
+      background-color: transparent
+      font-family: font-mono
+      .synSpecial { color: var(--synSpecial-color) }
+      .synType { color: var(--synType-color) }
+      .synComment {color: var(--synComment-color) }
+      .synPreProc { color: var(--synPreProc-color) }
+      .synIdentifier { color: var(--synIdentifier-color) }
+      .synConstant { color: var(--synConstant-color) }
+      .synStatement { color: var(--synStatement-color) }
+  code
+    margin: 0 0.25rem
+    padding: 0 0.25rem
+    font-weight: bold
+    background: var(--code-bg-color)
+    color: var(--code-text-color)
+  hr
+    width: 80%
+    border: none
+    border-top: thin dashed var(--tertiary-color)
+    margin: 2rem auto
+
+  .toc
+    padding: 0.5rem 0.5rem 0.5rem 2rem
+    margin: 0.5rem 0
+    border: thin solid var(--tertiary-color)
+    ul
+      margin-bottom: 0
+    a
+      Std-16N-7()
+      color: var(--text-color)
+      text-decoration: none
+      &:visited
+        color: var(--text-color)
+  a.header-anchor
+    float: right
+    color: var(--text-light-color)
+
+  // ========================================
+
+  .pullquote
+    text-align: left
+    width: 45%
+    margin: 0
+    &.left
+      margin-left: 0.5em
+      margin-right: 1em
+    &.right
+      margin-right: 0.5em
+      margin-left: 1em
+  .caption
+    color: var(--text-light-color)
+    display: block
+    Dns-14N-3()
+    margin-top: 0.5em
+    position: relative
+    text-align: center
+
+  // http://webdesignerwall.com/tutorials/css-elastic-videos
+  .video-container
+    position: relative
+    padding-top: (9 / 16 * 100)% // 16:9 ratio
+    height: 0
+    overflow: hidden
+    iframe, object, embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      margin-top: 0
+
+.article-more-link a
+  display: inline-block
+  padding: 0.5em 1em
+  background: var(--background-color)
+  text-decoration: none
+  &:hover
+    background: var(--text-light-color)
+    color: var(--background-color)
+    text-decoration: none
+  &:visited
+    color: var(--text-color)
+
+.article-footer
+  clearfix()
+  Dns-14N-3()
+  border-top: 1px solid var(--text-light-color)
+  margin: 0 1em 1em
+  a
+    color: var(--text-light-color)
+    text-decoration: none
+    &:hover
+      color: var(--text-color)
+
+.article-tag-list-item
+  float: left
+  margin-top: 0.5em
+  margin-right: 1em
+
+.article-tag-list-link
+  &:before
+    content: "#"
+
+.article-comment-link
+  float: right
+  &:before
+    padding-right: 0.5em
+
+.article-share-link
+  cursor: pointer
+  float: right
+  margin-left: 1em
+  margin-top: 0.5em
+  &:before
+    padding-right: 0.5em
+
+#article-nav
+  clearfix()
+  position: relative
+  @media mq-normal
+    margin: 2em 0
+  a
+    &:visited
+      color: var(--text-light-color)
+
+.article-nav-link-wrap
+  text-decoration: none
+  color: var(--text-light-color)
+  box-sizing: border-box
+  margin-top: block-margin
+  text-align: center
+  display: block
+  &:hover
+    color: var(--text-color)
+  @media mq-normal
+    width: 50%
+    margin-top: 0
+
+#article-nav-newer
+  @media mq-normal
+    float: right
+    text-align: right
+
+#article-nav-older
+  @media mq-normal
+    float: left
+    text-align: left
+
+.article-nav-caption
+  text-transform: uppercase
+  Std-16B-7()
+  font-weight: bold
+  color: var(--text-color)
+
+.article-nav-title
+  Dns-14N-3()
+  margin-top: 0.5rem
+
+.article-share-box
+  position: absolute
+  display: none
+  background: var(--body-background-color)
+  margin-left: -145px
+  overflow: hidden
+  -webkit-box-shadow: 1px 2px 5px var(--text-light-color)
+  box-shadow: 1px 2px 5px var(--text-light-color)
+  z-index: 1
+  &.on
+    display: block
+
+.article-share-input
+  width: 100%
+  background: none
+  box-sizing: border-box
+  Mono-14N-5()
+  padding: 0 0.5rem
+  color: var(--text-light-color)
+  outline: none
+  border: 1px solid var(--text-light-color)
+  height: 2rem
+  line-height: 2rem
+  
+.article-share-links
+  clearfix()
+  background: var(--body-background-color)
+  border: 1px solid var(--text-light-color)
+
+$article-share-link
+  width: 50px
+  height: 36px
+  display: block
+  float: left
+  position: relative
+  color: var(--text-light-color)
+  border-radius: 3px 3px 0 0 var(--text-light-color)
+  .fa
+    font-size: 1.5rem
+    absolute-center(@font-size)
+    text-align: center
+  &:hover
+    color: var(--text-light-color)
+  &:visited
+    color: var(--text-light-color)
+
+.article-share-twitter
+  @extend $article-share-link
+  &:hover
+    background: color-twitter
+
+.article-share-facebook
+  @extend $article-share-link
+  &:hover
+    background: color-facebook
+
+.article-share-pinterest
+  @extend $article-share-link
+  &:hover
+    background: color-pinterest
+
+.article-share-linkedin
+  @extend $article-share-link
+  &:hover
+    background: color-linkedin
+
+.article-gallery
+  background: var(--body-background-color)
+  position: relative
+
+.article-gallery-photos
+  position: relative
+  overflow: hidden
+
+.article-gallery-img
+  display: none
+  max-width: 100%
+  &:first-child
+    display: block
+  &.loaded
+    position: absolute
+    display: block
+  img
+    display: block
+    max-width: 100%
+    margin: 0 auto
